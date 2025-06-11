@@ -49,20 +49,20 @@ export const PROJECTS = [
     link: "https://github.com/Divyanth2468/go-chat-app",
   },
   {
+    title: "Go Job Scheduler",
+    image: project4,
+    description:
+      "A cloud-native, backend-only job scheduler written in Go. It supports scheduling shell and HTTP tasks using cron expressions and is designed for simplicity, flexibility, and easy extensibility.",
+    technologies: ["Go", "Serverless-ready", "modular backend"],
+    link: "https://github.com/Divyanth2468/Go-Job-Scheduler",
+  },
+  {
     title: "📝 CLI Task Manager in Go",
     image: project3,
     description:
       "A lightweight and efficient command-line task manager built in Go. This tool allows users to add, view, complete, and delete tasks with a simple interface—perfect for productivity on the terminal.",
     technologies: ["Go", "JSON", "Command Line Interface"],
     link: "http://github.com/Divyanth2468/CLI-TaskManager-Go",
-  },
-  {
-    title: "Blogging Platform",
-    image: project4,
-    description:
-      "A platform for creating and publishing blog posts, with features like rich text editing, commenting, and user profiles.",
-    technologies: ["HTML", "CSS", "Js", "Flask", "Mongodb"],
-    link: "https://github.com/Divyanth2468/My-Blog/",
   },
 ];
 
