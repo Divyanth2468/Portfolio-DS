@@ -1,6 +1,10 @@
 import { motion } from "framer-motion";
 import { HERO_CONTENT } from "../constants";
-import profilePic from "../assets/profilePic3.jpeg";
+import {
+  profilePic,
+  profilePic2,
+  profilePic3,
+} from "../assets/profilePic3.jpeg";
 
 const container = (delay) => ({
   hidden: { x: -100, opacity: 0 },
@@ -49,7 +53,7 @@ const Hero = () => {
               initial={{ x: 100, opacity: 0 }}
               animate={{ x: 0, opacity: 1 }}
               transition={{ duration: 1, delay: 1.2 }}
-              src={profilePic}
+              src={profilePic3}
               alt="Profile Pic"
               className="w-3/4"
             />
