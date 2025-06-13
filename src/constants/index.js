@@ -52,8 +52,14 @@ export const PROJECTS = [
     title: "Go Job Scheduler",
     image: project4,
     description:
-      "A cloud-native, backend-only job scheduler written in Go. It supports scheduling shell and HTTP tasks using cron expressions and is designed for simplicity, flexibility, and easy extensibility.",
-    technologies: ["Go", "Serverless-ready", "modular backend"],
+      "A cloud-native, backend-only job scheduler written in Go. It supports scheduling Shell, HTTP, and AWS Lambda tasks using cron expressions. It features PostgreSQL persistence, retry support, and is designed for serverless environments with a modular architecture.",
+    technologies: [
+      "Go",
+      "PostgreSQL",
+      "AWS Lambda",
+      "Serverless-ready",
+      "Modular Backend",
+    ],
     link: "https://github.com/Divyanth2468/Go-Job-Scheduler",
   },
   {
