@@ -41,6 +41,18 @@ const Hero = () => {
             >
               {HERO_CONTENT}
             </motion.p>
+
+            <motion.a
+              variants={container(1.5)}
+              initial="hidden"
+              animate="visible"
+              href="/public/DivyanthSatya.pdf"
+              download
+              className="inline-block mb-8 px-6 py-3 max-w-xl text-white text-sm rounded-xl bg-gradient-to-r from-purple-500 to-pink-500 hover:from-purple-600 hover:to-pink-600
+             transition-colors duration-300 ease-in-out"
+            >
+              Download Resume
+            </motion.a>
           </div>
         </div>
         <div className="w-full lg:w-1/2 lg:p-8">
@@ -48,7 +60,7 @@ const Hero = () => {
             <motion.img
               initial={{ x: 100, opacity: 0 }}
               animate={{ x: 0, opacity: 1 }}
-              transition={{ duration: 1, delay: 1.2 }}
+              transition={{ duration: 1, delay: 1.25 }}
               src={profilePic}
               alt="Profile Pic"
               className="w-3/4"
