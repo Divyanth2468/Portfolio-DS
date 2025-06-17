@@ -6,9 +6,15 @@ import { useState } from "react";
 const Contact = () => {
   const [formData, setFormData] = useState({
     name: "",
-    email: "",
+    sender: "",
     subject: "",
     message: "",
+  });
+
+  const [popup, setPopup] = useState({
+    show: false,
+    message: "",
+    success: true,
   });
 
   const handleChange = (e) => {
@@ -16,6 +22,13 @@ const Contact = () => {
       ...prev,
       [e.target.name]: e.target.value,
     }));
+  };
+
+  const triggerPopup = (message, success) => {
+    setPopup({ show: true, message, success });
+    setTimeout(() => {
+      setPopup({ show: false, message: "", success: true });
+    }, 2000);
   };
 
   const handleSubmit = (e) => {
@@ -31,23 +44,35 @@ const Contact = () => {
           subject: formData.subject,
           message: formData.message,
         },
-        import.meta.env.VITE_EMAILJS_PUBLIC_KEY // Public Key
+        import.meta.env.VITE_EMAILJS_PUBLIC_KEY
       )
-      .then(
-        (result) => {
-          console.log("Email sent!", result.text);
-          alert("Message sent!");
-          setFormData({ sender: "", subject: "", message: "" });
-        },
-        (error) => {
-          console.error("Email send error:", error.text);
-          alert("Failed to send message.");
-        }
-      );
+      .then(() => {
+        triggerPopup("Message sent successfully!", true);
+        setFormData({ name: "", sender: "", subject: "", message: "" });
+      })
+      .catch((error) => {
+        console.error("Email send error:", error.text);
+        triggerPopup("Failed to send message.", false);
+      });
   };
 
   return (
-    <div className="border-b border-neutral-900 pb-20">
+    <div className="relative border-b border-neutral-900 pb-20">
+      {popup.show && (
+        <div className="fixed inset-0 z-50 backdrop-blur-sm bg-black/40 flex items-center justify-center">
+          <div
+            className={`flex items-center gap-3 px-6 py-4 rounded-xl shadow-2xl backdrop-blur-lg bg-white/5 border ${
+              popup.success
+                ? "border-green-400 text-green-200"
+                : "border-red-400 text-red-200"
+            }`}
+          >
+            <span className="text-xl">{popup.success ? "✅" : "❌"}</span>
+            <p className="text-base">{popup.message}</p>
+          </div>
+        </div>
+      )}
+
       <motion.h1
         whileInView={{ opacity: 1, y: 0 }}
         initial={{ opacity: 0, y: -100 }}
