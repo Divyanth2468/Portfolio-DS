@@ -46,7 +46,7 @@ const Hero = () => {
               variants={container(1.5)}
               initial="hidden"
               animate="visible"
-              href="/public/DivyanthSatya.pdf"
+              href="DivyanthSatya.pdf"
               download
               className="inline-block mb-8 px-6 py-3 max-w-xl text-white text-sm rounded-xl bg-gradient-to-r from-purple-500 to-pink-500 hover:from-purple-600 hover:to-pink-600
              transition-colors duration-300 ease-in-out"
