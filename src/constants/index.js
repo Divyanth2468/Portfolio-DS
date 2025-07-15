@@ -3,24 +3,17 @@ import project2 from "../assets/projects/project-2.jpg";
 import project3 from "../assets/projects/project-3.jpg";
 import project4 from "../assets/projects/project-4.jpg";
 
-export const HERO_CONTENT = `I am a passionate and versatile full-stack developer with 6 months of professional experience in building robust and scalable web applications. I specialize in backend technologies such as Node.js, GoLang, and databases like PostgreSQL, MySQL, and MongoDB. In addition to my backend expertise, I have solid experience in front-end development using React. My goal is to create innovative and efficient solutions that drive business growth, enhance user experiences, and solve complex problems. I am also deeply passionate about data science, particularly machine learning, and continuously strive to expand my skills in this field.`;
+export const HERO_CONTENT = `I am a passionate and versatile full-stack developer with 1 plus years of professional experience in building robust and scalable web applications. I specialize in backend technologies such as Node.js, GoLang, and databases like PostgreSQL, MySQL, and MongoDB. In addition to my backend expertise, I have solid experience in front-end development using React. My goal is to create innovative and efficient solutions that drive business growth, enhance user experiences, and solve complex problems. I am also deeply passionate about data science, particularly machine learning, and continuously strive to expand my skills in this field.`;
 
 export const ABOUT_TEXT = `With a diverse skill set and a strong foundation in full-stack development, I thrive in collaborative environments where I can contribute to the success of cross-functional teams. My experience spans the entire development lifecycle, from planning and architecture to deployment and optimization. I am dedicated to creating high-performance applications and enjoy tackling challenges that allow me to grow as a developer. Outside of coding, I enjoy traveling, exploring new cultures, and gaining fresh perspectives.`;
 
 export const EXPERIENCES = [
   {
-    year: "Jan 2025 - Present",
+    year: "July 2024 - Present",
     role: "Full Stack Developer",
     company: "E-PRO TaxFilr Technology Solutions Pvt. Ltd.",
     description: `I led the development and deployment of a comprehensive web application for TaxFilr, architecting both front-end and back-end components. I significantly optimized database queries and back-end logic to boost efficiency and response times, while also developing and integrating robust APIs. I collaborated with the team on continuous improvements, bug fixes, and feature enhancements, conducting code reviews and maintaining thorough documentation.`,
-    technologies: ["Node.js", "React.js", "PostgreSQL.js", "PostMan"],
-  },
-  {
-    year: "July 2024 - Dec 2024",
-    role: "Full Stack Developer Intern",
-    company: "E-PRO TaxFilr Technology Solutions Pvt. Ltd.",
-    description: `I assisted in developing RESTful APIs, speeding up development cycles and frontend integration. I also collaborated with senior developers to resolve app issues and optimized database schemas for improved data retrieval.`,
-    technologies: ["Node.js", "React.js", "PostgreSQL.js"],
+    technologies: ["Golang", "React.js", "PostgreSQL.js", "PostMan"],
   },
   {
     year: "July 2023 - Sep 2023",
